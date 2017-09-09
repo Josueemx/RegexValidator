@@ -76,7 +76,7 @@ public class Validator {
                         regex_bools[i] = false;
                         valid = true;
                         x = i;
-                        message = message + "\n-" + regex_names[i] + (i==6?" ("+getCard(q)+")":"");                        
+                        message = message + "\n- " + regex_names[i] + (i==6?" ("+getCard(q)+")":"");                        
                         break;
                     }
                 }
@@ -88,7 +88,6 @@ public class Validator {
     }
     
     protected String getCard(String c){
-        String res = "";
         Pattern pattern;
         Matcher matcher;
         int x = 0;
