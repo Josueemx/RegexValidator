@@ -43,7 +43,7 @@ public class Validator {
     private final String CC_Visa_regex = "^(4)([0-9]{12}|[0-9]{15}|[0-9]{18})$";
     private final String CC_MC_regex = "^(((5)[1-5][0-9]{14})|(((222)[1-8][0-9]{2}|(2229)[0-8][0-9]|(22299)[0-9]|(22)[3-9][0-9]{3}|(2)[3-6][0-9]{4}|(27)[01][0-9]{3}|(2720)[0-8][0-9]|(27209)[0-9])[0-9]{10}))$";
     private final String CC_AE_regex = "^(3)(4|7)[0-9]{13}$";
-    private final String HTMLTag_regex = "^<(.|\\n)*?>$";
+    private final String HTMLTag_regex = "^\\<(.|\\n)*?\\>\\<\\/(.|\\n)*?\\>$";
     
     public Validator() {
         regexes[0] = IPv4_regex;
